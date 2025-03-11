@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding & border are included in width & height */
+    font-family: Arial, sans-serif; /* Sets a clean, readable font */
+}
+
+
+.navbar {
+    display: flex; /* Enables horizontal layout */
+    justify-content: space-between; /* Pushes content to both ends */
+    align-items: center; /* Aligns items vertically */
+    padding: 15px 40px; /* Adds spacing inside the navbar */
+    background-color: white; /* Sets background to white */
+    position: fixed; /* Fixes navbar at the top */
+    width: 100%; /* Ensures full-width navbar */
+    top: 0; /* Positions navbar at the top */
+    z-index: 100; /* Ensures navbar stays above other elements */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 24px; /* Sets font size */
+    font-weight: bold; /* Makes text bold */
+    color:red; /* Pinterest red */
+}
+
+
+/* Styling for inactive navigation links */
+.nav-links a {
+    text-decoration: none; /* Removes underline */
+    margin: 0 15px; /* Adds spacing between links */
+    font-size: 16px; /* Sets text size */
+    color: gray; /* Gray color for inactive links */
+    cursor: pointer; /* Shows pointer cursor to indicate clickability */
+    pointer-events: none; /* Disables clicking to make them inactive */
+}
+
+.nav-buttons .btn {
+    padding: 8px 15px; /* Adds padding inside buttons */
+    border: none; /* Removes default border */
+    border-radius: 20px; /* Rounds button edges */
+    font-size: 14px; /* Sets text size */
+    cursor: pointer; /* Enables clicking */
+}
+
+/* Login button (Red) */
+.login {
+    background-color: red; /* Pinterest red */
+    color: white; /* White text */
+}
+
+/* Signup button (Light Gray) */
+.signup {
+    background-color: lightgray; /* Light gray background */
+}
+
+
+.hero {
+    text-align: center; /* Centers text */
+    margin-top: 100px; /* Adds space below the navbar */
+    padding: 40px; /* Adds padding for spacing */
+}
+
+/* Main heading */
+.hero h1 {
+    font-size: 36px; /* Large text */
+    color: black; /* Black color */
+}
+
+/* Subheading */
+.hero h2 {
+    font-size: 32px; /* Slightly smaller than main heading */
+    color: green; /* Green shade */
+}
+
+/* Dots container */
+.dots {
+    margin-top: 15px; /* Adds space above dots */
+}
+
+/* Individual dots */
+.dot {
+    height: 8px; /* Sets dot size */
+    width: 8px; /* Makes dot circular */
+    margin: 0 5px; /* Adds spacing between dots */
+    background-color: lightgray; /* Default gray color */
+    display: inline-flex; /* Aligns dots in a row */
+    border-radius: 50%; /* Makes dots circular */
+}
+
+/* Active dot (Green) */
+.dot.active {
+    background-color: #3B7D44;
+}
+
+
+.pinterest-grid {
+    columns: 4; /* Creates a grid with 4 columns */
+    column-gap: 15px; /* Adds space between columns */
+    padding: 40px; /* Adds padding inside the section */
+    width: 90%; /* Limits the width for better layout */
+    margin: auto; /* Centers the grid */
+}
+
+/* Image Styling */
+.pinterest-grid img {
+    width: 100%; /* Ensures images fill column width */
+    display: block; /* Removes bottom spacing issue */
+    border-radius: 10px; /* Rounds image corners */
+    margin-bottom: 15px; /* Adds spacing between images */
+    transition: transform 0.3s ease; /* Adds smooth zoom effect */
+}
+
+/* Hover Effect - Slight Zoom */
+.pinterest-grid img:hover {
+    transform: scale(1.05); /* Enlarges image slightly */
+}
+
+.footer {
+    text-align: center; /* Centers text */
+    background-color: #FFF3CD; /* Light yellow background */
+    padding: 10px; /* Adds padding inside footer */
+    font-size: 18px; /* Increases font size */
+    margin-top: 30px; /* Adds space above footer */
+}
+
