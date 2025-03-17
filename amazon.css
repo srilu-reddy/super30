@@ -1,0 +1,324 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER STYLING */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #131921;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Amazon Logo */
+.nav-logo img {
+    width: 120px;
+}
+
+/* Location */
+.nav-location p, .nav-location a {
+    font-size: 12px;
+}
+
+/* Search Bar */
+.nav-search {
+    display: flex;
+    width: 50%;
+}
+
+.nav-search input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+.nav-search button {
+    background-color: #febd69;
+    border: none;
+    padding: 8px 15px;
+}
+
+/* Links */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+/* NAVIGATION BAR */
+.main-nav {
+    display: flex;
+    background-color: #232f3e;
+    padding: 10px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+/* HERO SECTION */
+.hero img {
+    width: 100%;
+    height: auto;
+}
+/* PRODUCT SECTIONS */
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #e3e6e6;
+}
+
+.product-box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product-box h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.product-grid img {
+    width: 45%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.see-more {
+    display: block;
+    color: #007185;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: repeat(1, 1fr); /* 1 per row on mobile */
+    }
+}
+.section-title {
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.grid-container {
+    display: flex;
+    gap: 15px; /* Space between items */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    padding: 10px;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.grid-item {
+    min-width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.recommendation-section {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.signin-button {
+    background-color: #FFD814;
+    border: 1px solid #FCD200;
+    padding: 8px 50px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.signin-button:hover {
+    background-color: #F7CA00;
+}
+
+p {
+    font-size: 14px;
+    color: #111;
+}
+
+p a {
+    color: #0066c0;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+/* FOOTER STYLING */
+.footer {
+    background-color: #131A22;
+    color: #DDD;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 20px;
+}
+
+.back-to-top {
+    background-color: #37475A;
+    padding: 12px;
+}
+
+.back-to-top a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back-to-top a:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.footer-column {
+    text-align: left;
+    max-width: 250px;
+}
+
+.footer-column h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #3a4553;
+    padding-top: 15px;
+    font-size: 12px;
+}
+
+.footer-bottom a {
+    color: #cccccc;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom p {
+    color: #aaaaaa;
+    margin-top: 5px;
+}
+
+.footer img {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+.footer-options {
+    margin-top: 15px;
+}
+
+.footer-options button {
+    background-color: transparent;
+    border: 1px solid #3A4553;
+    color: white;
+    padding: 6px 12px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.footer-options button:hover {
+    background-color: #3A4553;
+}
+
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+}
+.footer-links p {
+    color: white;
+}
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #fff; /* Ensure the background is visible */
+    z-index: 1000; /* Ensures it stays above other elements */
+}
