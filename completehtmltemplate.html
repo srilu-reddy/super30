@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A complete HTML reference page">
+    <title>Complete HTML Template</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
+    <script src="script.js"></script> <!-- External JavaScript -->
+    <style>
+        /* Internal CSS */
+        body { font-family: Arial, sans-serif; }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>This page contains all important HTML tags.</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- SECTION -->
+        <section>
+            <h2>About HTML</h2>
+            <p>HTML is the standard language for creating web pages.</p>
+            <hr> <!-- Horizontal rule -->
+        </section>
+
+        <!-- ARTICLE -->
+        <article>
+            <h2>Article Title</h2>
+            <p>This is a sample article with some <strong>important</strong> text.</p>
+        </article>
+
+        <!-- ASIDE -->
+        <aside>
+            <h3>Related Topics</h3>
+            <p>Learn more about <a href="#">CSS</a> and <a href="#">JavaScript</a>.</p>
+        </aside>
+
+        <!-- LISTS -->
+        <section>
+            <h2>Types of Lists</h2>
+            <ul> <!-- Unordered List -->
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <ol> <!-- Ordered List -->
+                <li>Step 1: Learn HTML</li>
+                <li>Step 2: Learn CSS</li>
+                <li>Step 3: Learn JavaScript</li>
+            </ol>
+            <dl> <!-- Definition List -->
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+            </dl>
+        </section>
+
+        <!-- TABLE -->
+        <section>
+            <h2>Sample Table</h2>
+            <table border="1">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>30</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- FORMS -->
+        <section>
+            <h2>Contact Form</h2>
+            <form action="submit.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <!-- MEDIA CONTENT -->
+        <section>
+            <h2>Media Elements</h2>
+
+            <h3>Image</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Wikipedia-logo-v2-en.svg/1920px-Wikipedia-logo-v2-en.svg.png" alt="Wikipedia Logo" width="300">
+            
+            <h3>Video</h3>
+            <video controls width="300">
+                <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </section>
+
+        <!-- DIV & SPAN EXAMPLES -->
+        <section>
+            <h2>Div and Span</h2>
+            <div style="background-color: lightgrey; padding: 10px;">
+                This is a div container.
+            </div>
+            <p>This is a <span style="color: red;">span</span> inside a paragraph.</p>
+        </section>
+
+        <!-- JAVASCRIPT -->
+        <section>
+            <h2>JavaScript Example</h2>
+            <button onclick="alert('Hello!')">Click Me</button>
+            <script>
+                console.log("JavaScript is working!");
+            </script>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 My Website | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
